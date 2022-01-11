@@ -17,6 +17,7 @@
 - Databases: MongoDB and MySQL.
 - Using Entity Framework to interact with MySQL, while using MongoDB driver to interact with MongoDB.
 - Using Docker.
+- Following CQRS pattern.
 
 <em>Note:</em> All of the above features are implemented at a very basic level.
 
