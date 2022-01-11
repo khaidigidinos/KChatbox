@@ -17,7 +17,8 @@
 - Databases: MongoDB and MySQL.
 - Using Entity Frameowrk to interact with MySQL, while using MongoDB driver to interact with MongoDB.
 - Using Docker.
-Note: All of the above features are implemented at a very basic level.
+
+<em>Note:</em> All of the above features are implemented at a very basic level.
 
 <strong>3. Current tasks:</strong>
 - Improving authozation and authentication process. For example, using a distributed cache to store JWT token, later can use this cache to revoke alredy logging out users.
