@@ -17,6 +17,6 @@
 - Using Docker.
 Note: All of the above features are implemented at a very basic level.
 
-<strong>3. Current task:</strong>
+<strong>3. Current tasks:</strong>
 - Improving authozation and authentication process. For example, using a distributed cache to store JWT token, later can use this cache to revoke alredy logging out users.
 - Allowing users to make a group chat.
