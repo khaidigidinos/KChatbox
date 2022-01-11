@@ -1,0 +1,118 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerComposeProjectPath>docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>892be24d-26e6-4642-9b6a-e02660e87e28</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.AspNetCore.SpaServices.Extensions" />
+    <None Remove="Controllers\" />
+    <None Remove="Repositories\" />
+    <None Remove="Services\" />
+    <None Remove="Hubs\" />
+    <None Remove="Microsoft.AspNetCore.SignalR" />
+    <None Remove="ViewModels\" />
+    <None Remove="Entities\" />
+    <None Remove="Enums\" />
+    <None Remove="DatabaseContexts\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Ultilities\" />
+    <None Remove="Migrations\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Migrations\UserDatabase\" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="MediatR" />
+    <None Remove="Migrations\UserDatabase\Configurations\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Filters\" />
+    <None Remove="CQRS\" />
+    <None Remove="CQRS\User\" />
+    <None Remove="CQRS\User\Queries\" />
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="CQRS\User\Queries\InfoUser\" />
+    <None Remove="CQRS\User\Queries\LoginUser\" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="Pipelines\" />
+    <None Remove="CQRS\User\Commands\" />
+    <None Remove="Feautures\User\Commands\RegisterUser\" />
+    <None Remove="Entities\User\" />
+    <None Remove="Entities\Rooms\" />
+    <None Remove="MongoDB.Driver" />
+    <None Remove="MongoDB.Driver.Core" />
+    <None Remove="MongoDB.Bson" />
+    <None Remove="Feautures\Room\" />
+    <None Remove="Feautures\Room\Queries\" />
+    <None Remove="Feautures\Room\Queries\GetRoomForUser\" />
+    <None Remove="Feautures\Room\Commands\" />
+    <None Remove="Feautures\Room\Commands\CreateNewRoomCommand\" />
+    <None Remove="Migrations\RoomDatabase\" />
+    <None Remove="Feautures\User\Queries\FindUsersQuery\" />
+    <None Remove="Mappings\" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Feautures\Room\Queries\GetMessagesForRoomQuery\" />
+    <None Remove="Feautures\User\Commands\UpdateFirebaseTokenCommand\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.11" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.4" />
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.13.2" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.13.2" />
+    <PackageReference Include="MongoDB.Bson" Version="2.13.2" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Hubs\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Enums\" />
+    <Folder Include="DatabaseContexts\" />
+    <Folder Include="Ultilities\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Migrations\UserDatabase\" />
+    <Folder Include="Migrations\UserDatabase\Configurations\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Feautures\" />
+    <Folder Include="Feautures\User\" />
+    <Folder Include="Feautures\User\Queries\" />
+    <Folder Include="Feautures\User\Queries\InfoUser\" />
+    <Folder Include="Feautures\User\Queries\LoginUser\" />
+    <Folder Include="Pipelines\" />
+    <Folder Include="Feautures\User\Commands\" />
+    <Folder Include="Feautures\User\Commands\RegisterUser\" />
+    <Folder Include="Entities\User\" />
+    <Folder Include="Entities\Room\" />
+    <Folder Include="Feautures\Room\" />
+    <Folder Include="Feautures\Room\Queries\" />
+    <Folder Include="Feautures\Room\Queries\GetRoomForUser\" />
+    <Folder Include="Feautures\Room\Commands\" />
+    <Folder Include="Feautures\Room\Commands\CreateNewRoomCommand\" />
+    <Folder Include="Migrations\RoomDatabase\" />
+    <Folder Include="Feautures\User\Queries\FindUsersQuery\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Feautures\Room\Queries\GetMessagesForRoomQuery\" />
+    <Folder Include="Feautures\User\Commands\UpdateFirebaseTokenCommand\" />
+  </ItemGroup>
+</Project>

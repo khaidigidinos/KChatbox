@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using SignalRApi.Enums;
+
+namespace SignalRApi.Entities.User
+{
+    public class UserEntity : BaseEntity
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public Status Status { get; set; }
+        public string FirebaseTokens { get; set; }
+        public virtual ICollection<RoleEntity> Roles { get; set; }
+    }
+}

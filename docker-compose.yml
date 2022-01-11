@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  signalrapi:
+    image: ${DOCKER_REGISTRY-}signalrapi
+    container_name: "signalr-api"
+    ports:
+        - "5000:80"
+    environment:
+        - "ConnectionStrings:UserConnectionString=Server=192.168.1.125;Port=3306;Database=SignalRUser;Uid=root;Pwd=;Pooling=False;CharSet=utf8"
+        - "ConnectionStrings:MessageContext:ConnectionString=mongodb://root:khai29012001@mongodb-signalr:27017"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+        - mongodb-signalr
+
+  mongodb-signalr:
+    image: mongo
+    container_name: "signalr-db"
+    ports:
+        - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: khai29012001
+    volumes:
+        - "signalr_mongo_db:/data/db"
+
+volumes:
+    signalr_mongo_db:
