@@ -25,6 +25,7 @@
 - Improving authozation and authentication process. For example, using a distributed cache to store JWT token, later can use this cache to revoke alredy logging out users.
 - Allowing users to make a group chat.
 - Implementing send notifications to users.
+- Trying to provide more roles and permissions.
 
 <strong>4. Visit:</strong>
 https://hidden-river-60444.herokuapp.com
