@@ -15,7 +15,7 @@
 - Using MediaTr to crate pipeline process for each request.
 - Ultilizing the strength of Dependency Injection to create abstractions for project.
 - Databases: MongoDB and MySQL.
-- Using Entity Frameowrk to interact with MySQL, while using MongoDB driver to interact with MongoDB.
+- Using Entity Framework to interact with MySQL, while using MongoDB driver to interact with MongoDB.
 - Using Docker.
 
 <em>Note:</em> All of the above features are implemented at a very basic level.
