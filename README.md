@@ -2,7 +2,7 @@
 
 
 <strong>1. Aim of this project:</strong>
-- Practice using SignalR to crate real-time comunications.
+- Practice using SignalR to create real-time comunications.
 - Follow Model - ViewModel - Controller pattern.
 - Pratice using ASP .Net Core 5.
 - This is the backend of KChatbox.
